@@ -1,3 +1,9 @@
+# Benjamin Belandres
+# I worked together with Alec Merkle (amerkle) to get this lab done. He recently contracted a norovirus
+# that left him unable to attend class, so he needed to catch up.
+# 2-25-2025
+# COSC-540-001
+
 #!/bin/bash
 #####################################################
 #
