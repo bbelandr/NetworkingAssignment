@@ -3,6 +3,7 @@
 # that left him unable to attend class, so he needed to catch up.
 # 2-25-2025
 # COSC-540-001
+# GitHub Repo: https://github.com/bbelandr/NetworkingAssignment.git
 
 #!/bin/bash
 #####################################################
