@@ -100,8 +100,8 @@ fi
 echo "$0:($LINENO): About to find info for file: $FILENAME,   ok? "
 askToExit
 
-POOBERS=$(tail +2 $FILENAME | head -10)
-echo "$POOBERS"
+Samples=$(tail +2 $FILENAME | head -n -4 | sed 's/\[//g' | sed 's/\]//g' | awk '{print $1, $8, $6}' | sed 's/time=//g' | sed 's/icmp_seq=//g' | awk '{printf "%9.9f %6.9f %s\n", $1, $2, $3}' )
+echo "$Samples" > RTT3.dat
 
 
 if [ -e $FILENAME ] ; then
