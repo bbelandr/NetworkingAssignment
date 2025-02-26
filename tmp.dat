@@ -1,0 +1,15 @@
+PING 172.19.0.1 (172.19.0.1) 32(60) bytes of data.
+[1727620148.344279] 40 bytes from 172.19.0.1: icmp_seq=1 ttl=64 time=1.23 ms
+[1727620148.844890] 40 bytes from 172.19.0.1: icmp_seq=2 ttl=64 time=1.03 ms
+[1727620149.345370] 40 bytes from 172.19.0.1: icmp_seq=3 ttl=64 time=0.901 ms
+[1727620149.854383] 40 bytes from 172.19.0.1: icmp_seq=4 ttl=64 time=0.998 ms
+[1727620150.354884] 40 bytes from 172.19.0.1: icmp_seq=5 ttl=64 time=0.938 ms
+[1727620150.862427] 40 bytes from 172.19.0.1: icmp_seq=6 ttl=64 time=1.04 ms
+[1727620151.362997] 40 bytes from 172.19.0.1: icmp_seq=7 ttl=64 time=1.00 ms
+[1727620151.863657] 40 bytes from 172.19.0.1: icmp_seq=8 ttl=64 time=1.10 ms
+[1727620152.364208] 40 bytes from 172.19.0.1: icmp_seq=9 ttl=64 time=0.987 ms
+[1727620152.864855] 40 bytes from 172.19.0.1: icmp_seq=10 ttl=64 time=1.09 ms
+
+--- 172.19.0.1 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 5851ms
+rtt min/avg/max/mdev = 0.600/0.931/7.559/0.270 ms
