@@ -100,6 +100,10 @@ fi
 echo "$0:($LINENO): About to find info for file: $FILENAME,   ok? "
 askToExit
 
+POOBERS=$(tail +2 $FILENAME | head -10)
+echo "$POOBERS"
+
+
 if [ -e $FILENAME ] ; then
   numberSamples=$(cat $FILENAME | wc -l)
   echo "$0: File:$FILENAME has $numberSamples samples "
