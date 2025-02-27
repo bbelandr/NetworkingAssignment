@@ -1,9 +1,7 @@
-# Benjamin Belandres
-# I worked together with Alec Merkle (amerkle) to get this lab done. He recently contracted a norovirus
-# that left him unable to attend class, so he needed to catch up.
-# 2-25-2025
+# Alec Merkle
+# I worked together with Ben Belandres (bbelandr) on the initial assignment (Quiz 2). The updates required for Quiz 3 were my work alone.
+# 2-27-2025
 # COSC-540-001
-# GitHub Repo: https://github.com/bbelandr/NetworkingAssignment.git
 
 #!/bin/bash
 #####################################################
@@ -26,7 +24,7 @@
 # 10 packets transmitted, 10 received, 0% packet loss, time 5851ms
 # rtt min/avg/max/mdev = 0.600/0.931/7.559/0.270 ms
 #
-# Last update  2/20/2025
+# Last update  2/27/2025
 #
 #####################################################
 
@@ -107,7 +105,7 @@ fi
 echo "$0:($LINENO): About to find info for file: $FILENAME,   ok? "
 askToExit
 
-Samples=$(cat $FILENAME | tail -n +2 | head -n -4 | sed 's/\[//g' | sed 's/\]//g' | awk '{print $1, $8, $6}' | sed 's/time=//g' | sed 's/icmp_seq=//g' | awk '{printf "%9.9f %6.9f %s\n", $1, $2, $3}' )
+Samples=$(cat $FILENAME | tail -n +2 | head -n -4 | sed 's/\[//g' | sed 's/\]//g' | awk '{print $1, $8, $6, $2}' | sed 's/time=//g' | sed 's/icmp_seq=//g' | awk '{printf "%9.9f %6.9f %s %s\n", $1, $2, $3, $4}' )
 echo "$Samples" > RTT3.dat
 
 
